@@ -1,53 +1,68 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moves III - Ayudas Retrasadas</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayudas Plan Moves III</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Opcional: Puedes agregar algún estilo adicional aquí */
+  </style>
 </head>
 <body class="bg-gray-100">
-    
-    <!-- Hero Section -->
-    <section class="relative w-full h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('young-couple-talking-sales-person-car-showroom.jpg');">
-        <div class="bg-black bg-opacity-50 w-full h-full flex flex-col items-center justify-center text-white px-6">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">¿Solicitaste el Moves III y aún no tienes respuesta?</h1>
-            <p class="text-lg md:text-2xl mb-6">Te ayudamos a agilizar tu proceso y resolver tus dudas.</p>
-            <a href="#contacto" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg text-lg">Contáctanos</a>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="py-16 px-6 text-center">
-        <h2 class="text-3xl font-bold mb-4">¿Por qué confiar en nosotros?</h2>
-        <p class="text-lg text-gray-700 max-w-2xl mx-auto">Sabemos lo frustrante que es esperar. Nuestro equipo te guiará en el proceso para que recibas tu ayuda del Plan Moves III lo antes posible.</p>
-        <div class="mt-8 grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <img src="woman-sitting-car-receiving-keys.jpg" alt="Mujer recibiendo llaves" class="rounded-lg shadow-lg">
-            <img src="close-up-customer-car-dealership.jpg" alt="Cliente en concesionario" class="rounded-lg shadow-lg">
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-screen" style="background-image: url('https://img.freepik.com/foto-gratis/cliente-feliz-concesionario-automoviles-vendedor_23-2149106204.jpg?t=st=1743599833~exp=1743603433~hmac=a0ea29ae41ec5fcf3d826c2330d20812b15bc9c461b91193138b5a16b7a55ba9&w=996');">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="relative z-10 container mx-auto px-4 py-24 text-center text-white">
+      <h1 class="text-4xl sm:text-6xl font-bold leading-tight mb-4">Recibe tu ayuda del Plan Moves III</h1>
+      <p class="text-xl sm:text-2xl mb-6">Si has solicitado la ayuda y aún no la has recibido, ¡estamos aquí para ayudarte!</p>
+      <a href="#formulario" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-full text-lg hover:bg-blue-700 transition duration-300">Solicita tu ayuda ahora</a>
+    </div>
+  </section>
 
-    <!-- Contact Form -->
-    <section id="contacto" class="py-16 bg-gray-200 px-6">
-        <h2 class="text-3xl font-bold text-center mb-6">Contáctanos</h2>
-        <form action="https://tu-endpoint-aqui.com" method="POST" class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
-            <label class="block mb-2 font-semibold">Nombre</label>
-            <input type="text" name="nombre" required class="w-full p-3 border rounded mb-4">
-            
-            <label class="block mb-2 font-semibold">Correo Electrónico</label>
-            <input type="email" name="email" required class="w-full p-3 border rounded mb-4">
-            
-            <label class="block mb-2 font-semibold">Mensaje</label>
-            <textarea name="mensaje" rows="4" required class="w-full p-3 border rounded mb-4"></textarea>
-            
-            <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded">Enviar</button>
+  <!-- Información -->
+  <section class="py-16 bg-white text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6">¿En qué podemos ayudarte?</h2>
+      <p class="text-lg text-gray-700">Si has solicitado las ayudas del Plan Moves III y aún no las has recibido, ofrecemos una solución rápida y sencilla para acelerar el proceso.</p>
+    </div>
+  </section>
+
+  <!-- Formulario de Contacto -->
+  <section id="formulario" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Formulario de Contacto</h2>
+      <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <form action="https://your-endpoint-here" method="POST" class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Nombre completo</label>
+            <input type="text" id="name" name="name" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500" placeholder="Juan Pérez">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+            <input type="email" id="email" name="email" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500" placeholder="juan@example.com">
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+            <textarea id="message" name="message" required class="w-full mt-1 p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded-full text-lg hover:bg-blue-700 transition duration-300">Enviar</button>
+          </div>
         </form>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="text-center py-6 bg-gray-800 text-white">
-        <p>&copy; 2025 Moves III Ayuda | Contacto: predondo@iac.s</p>
-    </footer>
+  <!-- Pie de página -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p class="text-sm">&copy; 2025 Ayudas Plan Moves III. Todos los derechos reservados.</p>
+    <p class="text-sm">Contacto: <a href="mailto:predondo@iac.s" class="underline">predondo@iac.s</a></p>
+  </footer>
 
 </body>
 </html>
+```
+
