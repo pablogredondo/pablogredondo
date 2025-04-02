@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moves III - Ayudas Retrasadas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Hero Section -->
+    <section class="relative w-full h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('young-couple-talking-sales-person-car-showroom.jpg');">
+        <div class="bg-black bg-opacity-50 w-full h-full flex flex-col items-center justify-center text-white px-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">¿Solicitaste el Moves III y aún no tienes respuesta?</h1>
+            <p class="text-lg md:text-2xl mb-6">Te ayudamos a agilizar tu proceso y resolver tus dudas.</p>
+            <a href="#contacto" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg text-lg">Contáctanos</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">¿Por qué confiar en nosotros?</h2>
+        <p class="text-lg text-gray-700 max-w-2xl mx-auto">Sabemos lo frustrante que es esperar. Nuestro equipo te guiará en el proceso para que recibas tu ayuda del Plan Moves III lo antes posible.</p>
+        <div class="mt-8 grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <img src="woman-sitting-car-receiving-keys.jpg" alt="Mujer recibiendo llaves" class="rounded-lg shadow-lg">
+            <img src="close-up-customer-car-dealership.jpg" alt="Cliente en concesionario" class="rounded-lg shadow-lg">
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contacto" class="py-16 bg-gray-200 px-6">
+        <h2 class="text-3xl font-bold text-center mb-6">Contáctanos</h2>
+        <form action="https://tu-endpoint-aqui.com" method="POST" class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <label class="block mb-2 font-semibold">Nombre</label>
+            <input type="text" name="nombre" required class="w-full p-3 border rounded mb-4">
+            
+            <label class="block mb-2 font-semibold">Correo Electrónico</label>
+            <input type="email" name="email" required class="w-full p-3 border rounded mb-4">
+            
+            <label class="block mb-2 font-semibold">Mensaje</label>
+            <textarea name="mensaje" rows="4" required class="w-full p-3 border rounded mb-4"></textarea>
+            
+            <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-gray-800 text-white">
+        <p>&copy; 2025 Moves III Ayuda | Contacto: predondo@iac.s</p>
+    </footer>
+
+</body>
+</html>
